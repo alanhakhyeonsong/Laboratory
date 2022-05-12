@@ -4,3 +4,9 @@ logging:
 
 file:
   dir: /Users/hakhyeonsong/study/filetest/
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+      enabled: true
