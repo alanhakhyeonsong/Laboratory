@@ -148,5 +148,8 @@ export { upload }
 ![](https://velog.velcdn.com/images/songs4805/post/1321d2c6-849a-49ec-9218-8c6f866472e4/image.png)
 그 결과, 내가 지정한 업로드 경로(`/Users/hakhyeonsong/study/filetest/`)로 해당 이미지 파일이 정상적으로 업로드 되었다.
 
+![](https://velog.velcdn.com/images/songs4805/post/f25a1f21-f99a-4a75-83df-fbc378dec72d/image.png)
+로그는 다음과 같이 정상적으로 출력되었다.
+
 ## References
 - [김영한님의 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2)
