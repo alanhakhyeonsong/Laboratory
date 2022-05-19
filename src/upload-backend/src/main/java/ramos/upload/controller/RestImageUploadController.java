@@ -22,15 +22,15 @@ public class RestImageUploadController {
     private String fileDir;
 
     @PostMapping("/upload")
-    public ResponseEntity<Object> upload(@RequestParam MultipartFile file) throws IOException {
-        log.info("multipartFile={}", file);
+    public ResponseEntity<Object> upload(@RequestParam MultipartFile uploadFile) throws IOException {
+        log.info("multipartFile={}", uploadFile);
 
-        if (!file.isEmpty()) {
-            String fullPath = fileDir + file.getOriginalFilename();
+        if (!uploadFile.isEmpty()) {
+            String fullPath = fileDir + uploadFile.getOriginalFilename();
             log.info("파일 저장 fullPath={}", fullPath);
-            file.transferTo(new File(fullPath));
+            uploadFile.transferTo(new File(fullPath));
         }
 
-        return new ResponseEntity<>(file.getOriginalFilename(), HttpStatus.OK);
+        return new ResponseEntity<>(uploadFile.getOriginalFilename(), HttpStatus.OK);
     }
 }
